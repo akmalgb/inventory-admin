@@ -36,6 +36,10 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         $category = Category::find($id);
+        if($category->Products()->count()) {
+            return back()->withErrors(['error' => 'Cannot delete, this category has existing products!']);
+        }
+        $category->Products()->delete();
         $category->delete();
 
         return redirect()->route('category.index');
