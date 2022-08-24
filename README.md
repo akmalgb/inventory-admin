@@ -49,8 +49,13 @@ php artisan db:seed
 php artisan serve
 ```
 ## Login
+User 1
+```
 Email: user@email.com
 Password: user1234
-
+```
+User 2
+```
 Email: user2@email.com
 Password: user1234
+```
