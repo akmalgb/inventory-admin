@@ -38,12 +38,6 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <div class="text-right">
-                        <button class="btn btn-danger">
-                            <i class="fas fa-trash-alt"></i>
-                            Deleted History
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
